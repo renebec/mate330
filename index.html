@@ -1,0 +1,355 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="utf-8" />
+<title>Evaluación Integral: Lógica, Sistemas Numéricos y Operaciones Aritméticas</title>
+<meta name="generator" content="Geany 2.1" />
+</head>
+
+<body>
+    
+    <div class="evaluacion-academica-container">
+      <style>
+        .evaluacion-academica-container {
+          font-family: 'Georgia', Cambria, "Times New Roman", Times, serif;
+          color: #2d3748;
+          line-height: 1.7;
+          max-width: 900px;
+          margin: 20px auto;
+          padding: 40px;
+          background: #ffffff;
+          border: 1px solid #cbd5e0;
+          border-radius: 6px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .evaluacion-academica-container h2 {
+          font-family: 'Helvetica Neue', Arial, sans-serif;
+          color: #1a365d;
+          border-bottom: 2px solid #2b6cb0;
+          padding-bottom: 12px;
+          margin-top: 0;
+          font-size: 1.6em;
+        }
+        .evaluacion-academica-container h3 {
+          font-family: 'Helvetica Neue', Arial, sans-serif;
+          color: #2b6cb0;
+          margin-top: 35px;
+          border-left: 4px solid #3182ce;
+          padding-left: 12px;
+          font-size: 1.2em;
+        }
+        .evaluacion-academica-container p {
+          margin-bottom: 15px;
+          text-align: justify;
+        }
+        .evaluacion-academica-container table {
+          width: 100%;
+          border-collapse: collapse;
+          margin: 25px 0;
+          font-size: 0.95em;
+        }
+        .evaluacion-academica-container th, 
+        .evaluacion-academica-container td {
+          border: 1px solid #cbd5e0;
+          padding: 10px 14px;
+          text-align: left;
+        }
+        .evaluacion-academica-container th {
+          background-color: #ebf8ff;
+          color: #2b6cb0;
+          font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        .evaluacion-academica-container tr:nth-child(even) {
+          background-color: #f7fafc;
+        }
+        .evaluacion-academica-container ol, 
+        .evaluacion-academica-container ul {
+          margin-bottom: 20px;
+          padding-left: 25px;
+        }
+        .evaluacion-academica-container li {
+          margin-bottom: 10px;
+        }
+        .evaluacion-nota-institucional {
+          background-color: #fffaf0;
+          border: 1px solid #feebc8;
+          border-left: 4px solid #dd6b20;
+          padding: 15px;
+          margin-top: 30px;
+          border-radius: 4px;
+          font-size: 0.95em;
+        }
+        .evaluacion-nota-institucional strong {
+          color: #c05621;
+        }
+      </style>
+      
+      <p>Los siguientes ejercicios se realizarán y revisarán como parte de las notas de la carpeta de evidencias y tendrán un valor
+      para la calificación del segundo parcial.</p>
+      <p>Esta actividad tiene un propósito formativo y sumativo, es decir, busca evaluar y traer aquellos aprendizajes
+      adquiridos durante el presente semestre en la asignatura de Pensamiento Matemático 1 (PM1).</p>
+      <br><br>
+
+      <h2>Evaluación Integral: Lógica, Sistemas Numéricos y Operaciones Aritméticas</h2>
+      <p>Las siguientes actividades de evaluación están diseñadas para medir el dominio conceptual y la consistencia cognitiva de los temas abordados durante el curso, divididas en cinco bloques progresivos.</p>
+
+      <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+
+      <h3>Bloque 1: Lógica Proposicional y Tablas de Verdad</h3>
+      <p>En este bloque se evaluará la identificación de proposiciones, la correcta aplicación de los operadores lógicos y la construcción de tablas de valores de verdad.</p>
+      
+      <ol>
+        <li><strong>Redacción y clasificación de proposiciones:</strong> Escribe 5 enunciados que sean proposiciones lógicas (indicando su valor de verdad: Verdadero o Falso) y 5 enunciados que <em>no</em> sean proposiciones.</li>
+        <li><strong>Cálculo de combinaciones:</strong> Calcula el número total de combinaciones de valores de verdad (<em>c</em>) aplicando la fórmula <em>c</em> = 2<sup><em>n</em></sup> para los siguientes casos:
+          <ul>
+            <li>Para <em>n</em> = 3 proposiciones.</li>
+            <li>Para <em>n</em> = 4 proposiciones.</li>
+          </ul>
+        </li>
+        <li><strong>Construcción de tablas de verdad:</strong> Elabora las tablas de verdad completas con todas las combinaciones posibles para los siguientes operadores y proposiciones:
+          <ul>
+            <li>Tabla para tres proposiciones (<em>p, q, r</em>).</li>
+            <li>Tabla aplicando la proposición condicional (<em>p</em> &rarr; <em>q</em>) y bicondicional (<em>p</em> &harr; <em>q</em>).</li>
+          </ul>
+        </li>
+      </ol>
+
+      <table>
+        <caption><em>Resumen de Operadores Lógicos Básicos</em></caption>
+        <thead>
+          <tr>
+            <th>Operador</th>
+            <th>Nombre</th>
+            <th>Se lee</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&not;</td>
+            <td>Negación</td>
+            <td>Es falso que...</td>
+          </tr>
+          <tr>
+            <td>&and;</td>
+            <td>Conjunción</td>
+            <td>...y...</td>
+          </tr>
+          <tr>
+            <td>&or;</td>
+            <td>Disyunción</td>
+            <td>...o...</td>
+          </tr>
+          <tr>
+            <td>&rarr;</td>
+            <td>Condicional</td>
+            <td>Si... entonces...</td>
+          </tr>
+          <tr>
+            <td>&harr;</td>
+            <td>Bicondicional</td>
+            <td>...si y solo si...</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+
+      <h3>Bloque 2: Sistemas de Numeración en la Antigüedad (Egipcios y Mayas)</h3>
+      <p>Comprende la conversión y representación numérica en civilizaciones antiguas utilizando tablas de datos.</p>
+
+      <ol>
+        <li><strong>Números Egipcios:</strong> Completa la siguiente tabla escribiendo el símbolo o valor correspondiente en el sistema de numeración egipcio:</li>
+      </ol>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Número arábigo</th>
+            <th>Representación en sistema egipcio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td></td></tr>
+          <tr><td>3</td><td></td></tr>
+          <tr><td>5</td><td></td></tr>
+          <tr><td>9</td><td></td></tr>
+          <tr><td>10</td><td></td></tr>
+          <tr><td>20</td><td></td></tr>
+          <tr><td>30</td><td></td></tr>
+          <tr><td>100</td><td></td></tr>
+        </tbody>
+      </table>
+
+      <ol start="2">
+        <li><strong>Números Mayas:</strong> Construye las tablas de números mayas correspondientes a los siguientes valores posicionales: 1, 4, 6, 10, 15, 17, 25, 31, 44, 59, 77, 80, 91, 95 y 99.</li>
+      </ol>
+
+      <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+
+      <h3>Bloque 3: Clasificación y Relación de los Números Reales</h3>
+      <p>Evaluación conceptual y gráfica sobre la estructura y propiedades del conjunto de los números reales.</p>
+
+      <ol>
+        <li><strong>Mapa Mental:</strong> Elabora un mapa mental detallado acerca de la clasificación de los Números Reales, incluyendo las categorías de:
+          <ul>
+            <li>Números naturales</li>
+            <li>Números enteros</li>
+            <li>Números racionales</li>
+            <li>Números irracionales</li>
+          </ul>
+          Acompaña cada categoría con al menos dos ejemplos prácticos (ej. &radic;2, &pi;).
+        </li>
+        <li><strong>Tabla Relacional de Subconjuntos Numéricos:</strong> Completa la siguiente matriz de doble entrada indicando con un signo de verificación (&check;) o una cruz (&times;) si el subconjunto numérico cumple con las propiedades o pertenece a la categoría indicada:</li>
+      </ol>
+
+      <table>
+        <caption><em>Matriz Relacional de Propiedades en los Números Reales</em></caption>
+        <thead>
+          <tr>
+            <th>Número / Valor</th>
+            <th>¿Es Natural? (&Nopf;)</th>
+            <th>¿Es Entero? (&Zopf;)</th>
+            <th>¿Es Racional? (&Qopf;)</th>
+            <th>¿Es Irracional?</th>
+            <th>¿Posee inverso aditivo en &Zopf;?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&minus;5</td>
+            <td>&times;</td>
+            <td>&check;</td>
+            <td>&check;</td>
+            <td>&times;</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>3 / 4</td>
+            <td>&times;</td>
+            <td>&times;</td>
+            <td>&check;</td>
+            <td>&times;</td>
+            <td>&minus;3 / 4</td>
+          </tr>
+          <tr>
+            <td>&radic;2</td>
+            <td>&times;</td>
+            <td>&times;</td>
+            <td>&times;</td>
+            <td>&check;</td>
+            <td>&minus;&radic;2</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>&check;</td>
+            <td>&check;</td>
+            <td>&check;</td>
+            <td>&times;</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>&pi;</td>
+            <td>&times;</td>
+            <td>&times;</td>
+            <td>&times;</td>
+            <td>&check;</td>
+            <td>&minus;&pi;</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <ol start="3">
+        <li><strong>Preguntas abiertas:</strong> Explica brevemente la diferencia principal entre un número racional y un número irracional, justificando por qué &radic;2 o &pi; pertenecen al segundo grupo.</li>
+      </ol>
+
+      <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+
+      <h3>Bloque 4: Operaciones Aritméticas y Operaciones Inversas con Enteros</h3>
+      <p>Aplicación de las reglas de signos, jerarquía de operaciones y resolución de ecuaciones mediante operaciones inversas.</p>
+
+      <ol>
+        <li><strong>Ejercicios de operaciones con enteros:</strong> Resuelve las siguientes operaciones aplicando las leyes de los signos correspondientes:
+          <ul>
+            <li>5 + (&minus;3) = ?</li>
+            <li>(&minus;4) + 7 = ?</li>
+            <li>(&minus;6) &minus; 2 = ?</li>
+            <li>(&minus;3) &times; (&minus;5) = ?</li>
+            <li>(+8) &divide; (&minus;2) = ?</li>
+          </ul>
+        </li>
+        <li><strong>Completar la igualdad aplicando la operación inversa:</strong> Resuelve para encontrar el valor de la incógnita en cada expresión:
+          <ul>
+            <li><em>x</em> + (&minus;4) = 10 &rarr; <em>x</em> = ?</li>
+            <li><em>y</em> &minus; 7 = &minus;1 &rarr; <em>y</em> = ?</li>
+            <li>(&minus;2) &times; <em>z</em> = 14 &rarr; <em>z</em> = ?</li>
+            <li><em>w</em> &divide; (&minus;5) = 3 &rarr; <em>w</em> = ?</li>
+          </ul>
+        </li>
+      </ol>
+
+      <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+
+      <h3>Bloque 5: Consistencia Cognitiva y Síntesis Global</h3>
+      <p>Actividad de integración transversal orientada a evaluar la conexión profunda entre los constructos lógicos, los sistemas numéricos antiguos y modernas operaciones algebraico-aritméticas.</p>
+
+      <ol>
+        <li><strong>Mapa Mental Global de Integración:</strong> Diseña un mapa mental de carácter integrador que conecte los tres grandes ejes del curso:
+          <ul>
+            <li><em>Eje 1 (Lógica):</em> Proposiciones lógicas y tablas de verdad aplicadas a la validación de enunciados matemáticos.</li>
+            <li><em>Eje 2 (Sistemas Numéricos):</em> Evolución histórica desde los sistemas posicionales (mayas) y aditivos (egipcios) hasta la formalización de los Números Reales.</li>
+            <li><em>Eje 3 (Aritmetica y Operaciones Inversas):</em> Resolución de estructuras numéricas y despeje de incógnitas mediante el uso de inversas aditivas y multiplicativas.</li>
+          </ul>
+        </li>
+        <li><strong>Tabla Relacional de Correspondencia Estructural:</strong> Completa la siguiente matriz comparativa analizando cómo se relacionan los principios lógicos formales con las operaciones aritméticas y los sistemas numéricos:</li>
+      </ol>
+
+      <table>
+        <caption><em>Matriz Global de Correspondencia Conceptual y Operativa</em></caption>
+        <thead>
+          <tr>
+            <th>Dominio de Estudio</th>
+            <th>Principio / Regla Clave</th>
+            <th>Aplicación Práctica / Ejemplo</th>
+            <th>Nivel de Abstracción Cognitiva</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Lógica Proposicional</strong></td>
+            <td>Valor de verdad (V / F) condicionado por conectores (p &rarr; q).</td>
+            <td>Determinar si una hipótesis numérica genera una conclusión válida.</td>
+            <td>Formal y Simbólico</td>
+          </tr>
+          <tr>
+            <td><strong>Sistemas Antiguos</strong></td>
+            <td>Principio aditivo y posicional (Base 10 / Base 20).</td>
+            <td>Representación de cantidades en estelas mayas o papiros egipcios.</td>
+            <td>Histórico y Concreto-Visual</td>
+          </tr>
+          <tr>
+            <td><strong>Números Reales</strong></td>
+            <td>Clasificación jerárquica (&Nopf; &sub; &Zopf; &sub; &Qopf; &sub; &Ropf;).</td>
+            <td>Ubicación de decimales periódicos e irracionales en la recta numérica.</td>
+            <td>Teórico y Topológico</td>
+          </tr>
+          <tr>
+            <td><strong>Aritmética y Operaciones Inversas</strong></td>
+            <td>Ley de signos y simetría de operaciones (Suma &harr; Resta).</td>
+            <td>Despeje de variables mediante la aplicación de inversas (<em>x</em> + a = b).</td>
+            <td>Operativo y Funcional</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="evaluacion-nota-institucional">
+        <p style="margin: 0;"><strong>Instrucción general de entrega:</strong> Recuerda escribir en la parte superior de tu hoja tu nombre completo, fecha, carrera y grupo antes de subir tus evidencias a la plataforma institucional.</p>
+      </div>
+    </div>
+
+</body>
+
+</html>
+
+```
